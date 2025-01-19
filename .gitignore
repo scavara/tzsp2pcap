@@ -18,4 +18,3 @@ usr/
 debian/debhelper-build-stamp
 debian/files
 debian/tzsp2pcap*
-debian/tzsp2pcap.debhelper.log
