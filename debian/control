@@ -1,0 +1,14 @@
+Source: tzsp2pcap
+Section: net
+Priority: optional
+Maintainer: scavara@gmail.com
+Build-Depends: debhelper (>= 9), debhelper-compat (= 13), libpcap-dev 
+Standards-Version: 4.6.0
+Homepage: https://github.com/thefloweringash/tzsp2pcap
+
+Package: tzsp2pcap
+Architecture: arm64
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Receive tazmen sniffer protocol over UDP and produce pcap formatted output
+ This package provides a utility to convert TZSP (Tazmen Sniffer Protocol)
+ data received over UDP to pcap format.

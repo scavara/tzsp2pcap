@@ -1,0 +1,21 @@
+# Ignore build artifacts
+*.o
+*.so
+tzsp2pcap
+
+# Ignore editor backup files
+*~
+.#*
+
+# Ignore object files and archives
+*.a
+
+# Ignore directories for build output
+build/
+usr/
+
+# Ignore Debian packaging files (if not using a separate repository)
+debian/debhelper-build-stamp
+debian/files
+debian/tzsp2pcap*
+debian/tzsp2pcap.debhelper.log

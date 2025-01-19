@@ -1,0 +1,17 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+override_dh_auto_install:
+	mkdir -p $(CURDIR)/debian/tzsp2pcap/usr/bin
+	install -m 0755 tzsp2pcap $(CURDIR)/debian/tzsp2pcap/usr/bin
+
+override_dh_install:
+	dh_install
+
+clean:
+	dh_clean
+	rm -f tzsp2pcap
+
+.PHONY: override_dh_auto_install override_dh_install clean
